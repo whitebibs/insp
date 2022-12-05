@@ -1,0 +1,89 @@
+@import url('https://fonts.cdnfonts.com/css/fifa-welcome');
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'FIFA Welcome', sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://content.fantacalcio.it/web/img/medium/mondiali-qatar-41d6d8be-8e79-49ec-9a7a-4a7e6af5708c.jpg);
+}
+.card-container {
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  border-radius: 15px;
+  width: 50px;
+  overflow: hidden;
+  transition: all ease-in-out 2s;
+  position: relative;
+  cursor: pointer;
+}
+.info {
+  margin-left: 2rem;
+  opacity: 0;
+  color: black;
+  font-weight: bold;
+  margin-left: 43px;
+  margin-bottom: 20px;
+}
+.icon {
+  width: 30px;
+  border: 1px solid rgb(0, 0, 0);
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  margin-left: 0.5rem;
+  margin-bottom: 15px;
+}
+.card-container:hover {
+  transform-box: scale(1.05);
+  -webkit-box-shadow: 7px 8px 16px 1px rgba(227, 91, 227, 0.56);
+  -moz-box-shadow: 7px 8px 16px 1px rgba(227, 91, 227, 0.56);
+  box-shadow: 7px 8px 16px 1px rgba(227, 91, 227, 0.56);
+  width: 350px;
+}
+.card-container:hover .info {
+  opacity: 1;
+  transition:ease-in-out 6s;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.ronaldo {
+  background-image: url(./ic-cristiano-ronaldo-bg.jpg);
+}
+.mbappe {
+  background-image: url(./ic-mbappe-bg.jpg);
+}
+
+.mbappe .info {
+  color: white;
+}
+.messi {
+  background-image: url(./ic-messi-bg.jpg);
+}
+.neymar {
+  background-image: url(./ic-neymar-bg.jpg);
+}
+.richarlison {
+  background-image: url(./ic-richarlison-bg.jpg);
+}
+
